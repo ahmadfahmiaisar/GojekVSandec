@@ -38,4 +38,5 @@ public class MainActivity extends AppCompatActivity {
     public void goride(View view) {
         Toast.makeText(MainActivity.this, "Ini Goride", Toast.LENGTH_SHORT).show();
     }
+
 }
