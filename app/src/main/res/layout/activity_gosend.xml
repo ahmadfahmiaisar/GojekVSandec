@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gosend">
+
+    <TableLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama : "
+                android:textColor="#000"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Sholikhah Indah Widiyanti"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat : "
+                android:textColor="#000"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Wonogiri Bantul Yogyakarta"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesan : "
+                android:textColor="#000"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/et_pesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Capcin Coklat"
+                android:textColor="#000"
+                android:textSize="20dp"/>
+        </TableRow>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="order"
+            android:text="order"/>
+    </TableLayout>
+</RelativeLayout>

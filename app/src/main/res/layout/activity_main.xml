@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/gojek"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:id="@+id/atas"
+        android:layout_below="@id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_gocar"
+            android:onClick="gocar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gocar"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iv_gosend"
+            android:onClick="gosend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gosend"
+            android:scaleType="centerCrop"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_below="@id/atas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/iv_gomart"
+        android:onClick="gomart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gomart"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/ivgoride"
+        android:onClick="goride"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/goride"
+        android:scaleType="centerCrop"
+        android:layout_margin="5dp"
+        android:layout_weight="1"/>
+</LinearLayout>
+</RelativeLayout>
